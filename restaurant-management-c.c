@@ -72,7 +72,7 @@ while (temp->Next!=NULL){
 temp=temp->Next;}
 temp->Next=nouveauPlat;
 nouveauPlat->Previous=temp;}
-printf("\nLe plat [%s] a ete ajoute a la fin du menu avec ducces.",nouveauPlat->plat->nom);
+printf("\nLe plat [%s] a ete ajoute a la fin du menu avec succes.",nouveauPlat->plat->nom);
 }
 
 void AjoutApresPlat(Restaurant* restaurant, char* platspe) {
@@ -136,7 +136,7 @@ printf("\nModification effectuee avec succes !");}
 
 void SupprimerPlatDebut(Restaurant* restaurant) {
 if (restaurant->Listplats==NULL) {
-printf("\nErreur : Le menu est déjà vide !");
+printf("\nErreur : Le menu est dÃ©jÃ  vide !");
 return;}
 Noeudplat* temp=restaurant->Listplats;
 restaurant->Listplats=restaurant->Listplats->Next;
@@ -148,7 +148,7 @@ printf("\nLe premier plat a ete supprime avec succes.");}
 
 void SupprimerPlatFin(Restaurant* restaurant) {
 if (restaurant->Listplats==NULL) {
-printf("\nErreur : Le menu est déjà vide !");
+printf("\nErreur : Le menu est dÃ©jÃ  vide !");
 return;}
 Noeudplat* temp = restaurant->Listplats;
 while (temp->Next != NULL) {
@@ -156,13 +156,13 @@ temp=temp->Next;}
 if (temp->Previous == NULL) {
 restaurant->Listplats=NULL;}
 else {temp->Previous->Next=NULL;}
-free(temp->plat); // On libère la fiche
-free(temp);      // On libère la boîte
+free(temp->plat); // On libÃ¨re la fiche
+free(temp);      // On libÃ¨re la boÃ®te
 printf("\nLe dernier plat a ete supprime avec succes.");}
 
 void supprimerPlatspe(Restaurant* restaurant, char* platspe) {
 if (restaurant->Listplats==NULL) {
-printf("\nErreur : Le menu est déjà vide !");
+printf("\nErreur : Le menu est dÃ©jÃ  vide !");
 return;}
 Noeudplat* temp=restaurant->Listplats;
 while (temp!=NULL && strcmp(temp->plat->nom,platspe)!=0) {
