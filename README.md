@@ -103,7 +103,7 @@ The project uses `malloc()` and `free()` for dynamic memory allocation and deall
 Using GCC:
 
 ```bash
-gcc main.c -o restaurant_manager
+gcc restaurant-management-c.c -o restaurant_manager
 ```
 
 Then run:
