@@ -73,6 +73,9 @@ Restaurant List
 ```
 
 Both restaurants and dishes are managed using **doubly linked lists**, with `Next` and `Previous` pointers allowing bidirectional traversal and facilitating insertion and deletion operations.
+## Screenshots
+
+Selected screenshots demonstrating the program's features can be found in the [screenshots folder](./screenshots/).
 
 ## 🛠️ Technologies & Tools
 
